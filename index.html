@@ -215,7 +215,7 @@ function update() {
     world.step(timeStep * 0.5);
     world.step(timeStep * 0.5);
     if (wheelSpinning === true && wheelStopped === false &&
-        wheel.body.angularVelocity < 1 && arrow.hasStopped()) {
+        wheel.body.angularVelocity < 1.25 && arrow.hasStopped()) {
         
         var timer = setInterval(() => {
             var win = wheel.gotLucky();
